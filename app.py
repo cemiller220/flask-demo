@@ -55,6 +55,7 @@ def plot():
     p.title_text_font_size = '20pt'
     p.xaxis.major_label_text_font_size = '16pt'
     p.yaxis.major_label_text_font_size = '16pt'
+    p.legend
     for i in xrange(len(name_list)):
         p.line(stocks_df['Date'],stocks_df[name_list[i]],legend=name_list[i],line_color=color_list[i])
     script,div = components(p)
